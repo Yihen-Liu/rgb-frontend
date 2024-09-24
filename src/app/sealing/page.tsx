@@ -15,16 +15,16 @@ export default async function Orders() {
   return (
     <>
       <div className="flex items-end justify-between gap-4">
-        <Heading>Orders</Heading>
-        <Button className="-my-0.5">Create order</Button>
+        <Heading>Sealings</Heading>
+        <Button className="-my-0.5">Refresh Sealing</Button>
       </div>
       <Table className="mt-8 [--gutter:theme(spacing.6)] lg:[--gutter:theme(spacing.10)]">
         <TableHead>
           <TableRow>
-            <TableHeader>Order number</TableHeader>
+            <TableHeader>Sealing number</TableHeader>
             <TableHeader>Purchase date</TableHeader>
             <TableHeader>Customer</TableHeader>
-            <TableHeader>Event</TableHeader>
+            <TableHeader>Contract</TableHeader>
             <TableHeader className="text-right">Amount</TableHeader>
           </TableRow>
         </TableHead>

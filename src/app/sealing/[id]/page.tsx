@@ -29,14 +29,14 @@ export default async function Order({ params }: { params: { id: string } }) {
   return (
     <>
       <div className="max-lg:hidden">
-        <Link href="/orders" className="inline-flex items-center gap-2 text-sm/6 text-zinc-500 dark:text-zinc-400">
+        <Link href="/sealing" className="inline-flex items-center gap-2 text-sm/6 text-zinc-500 dark:text-zinc-400">
           <ChevronLeftIcon className="size-4 fill-zinc-400 dark:fill-zinc-500" />
-          Orders
+          Sealings
         </Link>
       </div>
       <div className="mt-4 lg:mt-8">
         <div className="flex items-center gap-4">
-          <Heading>Order #{order.id}</Heading>
+          <Heading>Sealing #{order.id}</Heading>
           <Badge color="lime">Successful</Badge>
         </div>
         <div className="isolate mt-2.5 flex flex-wrap justify-between gap-x-6 gap-y-4">
@@ -73,7 +73,7 @@ export default async function Order({ params }: { params: { id: string } }) {
         <DescriptionList>
           <DescriptionTerm>Customer</DescriptionTerm>
           <DescriptionDetails>{order.customer.name}</DescriptionDetails>
-          <DescriptionTerm>Event</DescriptionTerm>
+          <DescriptionTerm>Contract</DescriptionTerm>
           <DescriptionDetails>
             <Link href={order.event.url} className="flex items-center gap-2">
               <Avatar src={order.event.thumbUrl} className="size-6" />

@@ -43,14 +43,14 @@ export default async function Home() {
         <Stat title="Tickets sold" value="5,888" change="+4.5%" />
         <Stat title="Pageviews" value="823,067" change="+21.2%" />
       </div>
-      <Subheading className="mt-14">Recent orders</Subheading>
+      <Subheading className="mt-14">Recent sealing</Subheading>
       <Table className="mt-4 [--gutter:theme(spacing.6)] lg:[--gutter:theme(spacing.10)]">
         <TableHead>
           <TableRow>
-            <TableHeader>Order number</TableHeader>
+            <TableHeader>Sealing number</TableHeader>
             <TableHeader>Purchase date</TableHeader>
             <TableHeader>Customer</TableHeader>
-            <TableHeader>Event</TableHeader>
+            <TableHeader>Contract</TableHeader>
             <TableHeader className="text-right">Amount</TableHeader>
           </TableRow>
         </TableHead>

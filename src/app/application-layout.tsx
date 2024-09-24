@@ -88,7 +88,7 @@ export function ApplicationLayout({
             <Dropdown>
               <DropdownButton as={SidebarItem}>
                 <Avatar src="/teams/catalyst.svg" />
-                <NavbarLabel>Catalyst</NavbarLabel>
+                <NavbarLabel>RGB Hub</NavbarLabel>
                 <ChevronDownIcon />
               </DropdownButton>
               <DropdownMenu className="min-w-80 lg:min-w-64" anchor="bottom start">
@@ -120,13 +120,13 @@ export function ApplicationLayout({
               <NavbarLabel>Dashboard</NavbarLabel>
             </NavbarItem>
 
-            <NavbarItem href="/events" current={pathname.startsWith('/events')}>
+            <NavbarItem href="/contract" current={pathname.startsWith('/contract')}>
               <Square2StackIcon />
-              <NavbarLabel>Events</NavbarLabel>
+              <NavbarLabel>Contract</NavbarLabel>
             </NavbarItem>
-            <NavbarItem href="/orders" current={pathname.startsWith('/orders')}>
+            <NavbarItem href="/sealing" current={pathname.startsWith('/sealing')}>
               <TicketIcon />
-              <NavbarLabel>Orders</NavbarLabel>
+              <NavbarLabel>Sealing</NavbarLabel>
             </NavbarItem>
             <NavbarItem href="/settings" current={pathname.startsWith('/settings')}>
               <Cog6ToothIcon />
